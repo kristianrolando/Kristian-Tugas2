@@ -15,7 +15,6 @@ public class GameManager : MonoBehaviour {
 	public GameObject countdownPage;
 	public Text scoreText;
 
-	int _score;
 
 	enum PageState{
 		None,
@@ -68,8 +67,8 @@ public class GameManager : MonoBehaviour {
 
 	void OnPlayerScored(){
 	
-		_score++;
-		scoreText.text = _score.ToString();
+		score++;
+		scoreText.text = score.ToString();
 	}
 
 	void SetPageState(PageState state){
